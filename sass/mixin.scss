@@ -1,0 +1,25 @@
+@mixin transition($time, $effect){
+	-webkit-transition: all $time $effect;
+	-o-transition: all $time $effect;
+	transition: all $time $effect;
+}
+
+@mixin translate($x, $y){
+	-webkit-transform: translate($x, $y);
+	-ms-transform: translate($x, $y);
+	transform: translate($x, $y);
+}
+
+@mixin paddingY($p){
+	padding-top: $p !important;
+	padding-bottom: $p !important;
+}
+
+@mixin paddingX($p){
+	padding-right: $p !important;
+	padding-left: $p !important;
+}
+
+@mixin borderR($width, $color){
+	border: $width solid $color;
+}
